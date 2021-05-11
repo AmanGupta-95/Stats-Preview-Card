@@ -6,6 +6,15 @@
 	box-sizing: border-box;
 }
 
+:root{
+    --blue: hsl(233, 47%, 7%)
+    --dark-blue: hsl(244, 38%, 16%)
+    --violet: hsl(277, 64%, 61%)
+    --white: hsl(0, 0%, 100%)
+    --white-mid:  hsla(0, 0%, 100%, 0.75)
+    --white-high:  hsla(0, 0%, 100%, 0.6)
+}
+
 html {
 	font-family: Inter;
 }
