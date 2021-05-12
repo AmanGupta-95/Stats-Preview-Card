@@ -34,10 +34,11 @@ html {
 }
 
 .text-side {
-	margin: 3rem;
 	width: 25rem;
 	display: flex;
+	justify-content: center;
 	flex-flow: column;
+	margin: 0rem 5rem;
 	text-align: left;
 }
 
@@ -73,12 +74,54 @@ html {
 }
 
 .image-side {
-	width: 33rem;
-	background: linear-gradient(
-			hsla(277, 64%, 61%, 0.5),
-			hsla(277, 64%, 61%, 0.5)
-		),
-		url('images/image-header-desktop.jpg') no-repeat top center;
+	height: 26.8rem;
+	position: relative;
+}
+
+.desktop-image {
+	width: 100%;
+	height: 100%;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+	position: relative;
 }
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: linear-gradient(var(--violet), var(--violet));
+	opacity: 0.5;
+}
+
+.mobile-image {
+	display: none;
+}
+
+/*************************************/
+/* MOBILE STYLE */
+/*************************************/
+
+/* @media only screen and (max-width: 375px) {
+	html{
+		font-size: 10px;
+	}
+	.card {
+		flex-direction: column;
+	}
+	.text-side {
+		width: 12rem;
+		text-align: center;
+	}
+	.image-side {
+		height: 5rem;
+		background: linear-gradient(
+				hsla(277, 64%, 61%, 0.5),
+				hsla(277, 64%, 61%, 0.5)
+			),
+			url('images/image-header-mobile.jpg') no-repeat top center;
+	}
+} */
